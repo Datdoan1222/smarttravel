@@ -1,9 +1,11 @@
 import React from "react";
-
-function Button({ children }) {
+import "../../contans/styles/log.scss";
+function Button({ children, onClick = "" }) {
   return (
-    <div>
-      <button type="submit">{children}</button>
+    <div className="button-container">
+      <button className="button" onClick={onClick} type="submit">
+        {children}
+      </button>
     </div>
   );
 }

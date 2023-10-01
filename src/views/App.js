@@ -1,7 +1,9 @@
 import "./App.scss";
-import SiginScreen from "./log/SiginScreen";
+import SiginPhoneScreen from "./log/phone/SiginPhoneScreen";
+import VerifyPhoneScreen from "./log/phone/VerifyPhoneScreen";
 function Auth() {
-  return <SiginScreen />;
+  // return <SiginPhoneScreen />;
+  return <VerifyPhoneScreen />;
 }
 function App() {
   return (
