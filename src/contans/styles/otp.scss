@@ -1,0 +1,28 @@
+.OTPInput {
+    display: flex;
+    flex: 4;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.OTPInput input {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 16px;
+    margin-top: 10px;
+}
