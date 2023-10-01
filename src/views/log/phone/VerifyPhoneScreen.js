@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "../../../contans/styles/log.scss";
 import bachgroundLog from "../../../assets/img/bachgroundLog.png";
 import logo from "../../../assets/img/logo.jpg";
@@ -11,17 +11,17 @@ function VerifyPhoneScreen() {
   const [otp, setOtp] = useState("");
   const onChange = (value) => setOtp(value);
   return (
-    <div className="Container">
+    <div className="container">
       <HeaderLog logo={logo} />
-      <div className="Body">
-        <img src={bachgroundLog} className="Image" alt="bachground" />
-        <div className="Body-item">
+      <div className="body">
+        <img src={bachgroundLog} className="image" alt="bachground" />
+        <div className="body-item">
           <ItemLeft title="Du Lịch Thông Minh" />
           <ItemRight
             title="Nhập OTP"
             textTitle="Chúng tôi vừa gửi cho bạn mã gồm 4 chữ số qua số điện thoại"
           >
-            <VerifyOTP value={otp} valueLength={4} onChange={onChange} />
+            <VerifyOTP />
           </ItemRight>
         </div>
       </div>

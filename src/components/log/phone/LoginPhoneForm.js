@@ -30,8 +30,8 @@ function LoginPhoneForm() {
   };
 
   return (
-    <div className="Item-right-form">
-      <div className="Form-item">
+    <div className="item-right-form">
+      <div className="form-item">
         <PhoneInput
           country={"vn"}
           value={phoneNumber}

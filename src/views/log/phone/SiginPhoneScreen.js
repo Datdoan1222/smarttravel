@@ -9,11 +9,11 @@ import ItemRight from "../../../components/log/ItemRight";
 
 const SiginPhoneScreen = () => {
   return (
-    <div className="Container">
+    <div className="container">
       <HeaderLog logo={logo} />
-      <div className="Body">
-        <img src={bachgroundLog} className="Image" alt="bachground" />
-        <div className="Body-item">
+      <div className="body">
+        <img src={bachgroundLog} className="image" alt="bachground" />
+        <div className="body-item">
           <ItemLeft title="Du Lịch Thông Minh" />
           <ItemRight
             title="Số điện thoại"
