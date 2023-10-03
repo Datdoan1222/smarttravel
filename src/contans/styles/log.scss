@@ -1,0 +1,157 @@
+@import "../colors";
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    margin-top: 50px;
+}
+.header-logo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.image-logo {
+    width: 150px;
+}
+
+.body {
+}
+.body-item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-left {
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.item-left-title {
+    flex: 1;
+    color: $primary800;
+    align-items: center;
+}
+.left-title {
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.item-left-image {
+    background-image: url(../../assets/img/logoItem.png);
+    background-repeat: no-repeat;
+    background-size: 40vh 41vh;
+    align-items: center;
+    width: 40vh;
+    height: 41vh;
+}
+
+.item-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.item {
+    width: 380px;
+}
+.item-right-content {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item-right-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: $primary600;
+    margin: 0;
+    padding: 0;
+}
+.item-right-text {
+    font-size: 1vw;
+    color: $gray;
+}
+.item-right-title,
+.item-right-text {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+.item-right-form {
+    flex: 4;
+}
+.form {
+}
+.form-item {
+    margin-top: 26px;
+}
+.error-message {
+    font-size: 20rem;
+    color: black;
+}
+@media (max-width: 768px) {
+    .body-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .item-left-image {
+        background-repeat: no-repeat;
+        background-size: 183px 171px;
+        height: 171px;
+        width: 183px;
+    }
+    .item-left,
+    .item-right {
+        width: 100%;
+        max-width: 370px;
+    }
+}
+@media (max-height: 700px) {
+    .body-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .item-left-image {
+        background-image: none;
+        width: 0;
+        height: 0;
+    }
+    .item-left,
+    .item-right {
+        width: 100%;
+        max-width: 370px;
+    }
+}
+.image-background {
+    bottom: 0;
+}
+.image {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
+.button-container {
+    margin-top: 20px;
+}
+.button {
+    width: 380px;
+    height: 52px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: #3ac3b4;
+}
+.button-container :hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+}
